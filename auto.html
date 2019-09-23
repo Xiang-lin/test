@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.css" />
+    <script
+      src="js/jquery-3.3.1.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="js/jquery-ui.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <style type="text/css"></style>
+  </head>
+
+  <body>
+    <div id="auto">
+      <label for="my">标签：</label>
+      <input id="my" />
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(function() {
+    var datas = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+
+    //自动完成  datas数据源
+    $("#my").autocomplete({
+      source: datas
+    });
+  });
+</script>
